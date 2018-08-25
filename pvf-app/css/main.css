@@ -1,0 +1,326 @@
+/* Main CSS style for frontend */
+
+html {
+	background-color: #fce5f9;
+}
+
+body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.header {
+	background: #6fb1bd;
+	color: #fff;
+	height: 12vh;
+	display: flex;
+}
+
+.brand {
+   width: 150px;
+    margin: 10px;
+    font-size: 2.4em;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.brand p {
+	font-size: 1em;
+	font-weight: 700;
+	color: #b3dee7;
+	margin-left: 5vw;
+	text-shadow: 2px 2px #6f6f6f;
+}
+.brand p span {
+	color: #ebb3ce;
+	text-shadow: 2px 2px #6f6f6f;
+}
+
+#login-form {
+	display: flex;
+	align-items: center;
+	margin-right: 30px;
+}
+
+#login-form input,
+#login-form button {
+	padding: 5px;
+	margin: 8px;
+}
+
+#login-form button {
+	background-color: #6f6f6f;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+#login-form button:hover {
+	opacity: .8;
+}
+
+#login-error {
+	height: 15px;
+    font-size: 12px;
+}
+
+#signup-form {
+	width: 30%;
+	margin-left: 5vw;
+}
+
+#signup-form button {
+	padding: 10px 20px;
+	background-color: #6f6f6f;
+	color: #fff;
+	width: 100%;
+}
+
+#signup-form button:hover {
+	opacity: .8;
+}
+
+#signup-form input {
+	padding: 10px;
+	width: 45%;
+}
+
+#signup-form p {
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+#user-image img {
+	max-width: 150px;
+	border-radius: 50%;
+	border: 2px solid #6f6f6f;
+	padding: 5px;
+}
+
+.content {
+	padding: 20px;
+}
+#signup-form label {
+	width: 100px;
+    display: inline-block;
+}
+
+#signup-form .form-group {
+	margin: 10px 0;
+}
+.form-group label {
+	width: 50%;
+}
+#navbar {
+	margin-right: 20px;
+	margin-top: 4vh;
+	font-size: 1.5em;
+}
+
+#navbar a {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 15px;
+}
+#navbar a:hover {
+	opacity: .7;
+}
+.error-msg {
+    background: #ebb3ce;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fce5f9;
+    font-size: 14px;
+}
+
+.success-msg {
+	background: #6f6f6f;
+    padding: 10px;
+    border-radius: 10px;
+    color: #eaecea;
+    font-size: 14px;
+}
+
+
+.left-sidebar {
+	width: 200px;
+    float: left;
+}
+.feed-body img {
+	max-width: 800px;
+}
+.main-content {
+	display: inline-block;
+    width: calc(100% - 200px);
+}
+.new-feed, #feed-list {
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+.add-feed {
+	width: 250px;
+	float: left;
+	margin-right: 50px;
+}
+
+.add-feed button {
+	background: #ebb3ce;
+	padding: 5px 10px;
+}
+
+.add-image button {
+	background: #ebb3ce;
+	padding: 5px 10px;
+}
+
+.add-image label {
+	font-style: italic;
+}
+#success, #errors{
+	margin-bottom: 20px;
+}
+ #errors {
+ 	background-color: #ebb3ce;
+ }
+
+.feed-content {
+	background: #b3dee7;
+    padding: 10px;
+    border: 1px solid #e2dede;
+    margin-bottom: 10px;
+}
+
+.feed-author img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 5px;
+}
+.feed-author a {
+	display: block;
+}
+.feed-author {
+	width: 150px;
+	float: left;
+}
+
+div#username {
+	color: #6f6f6f;
+	padding: 15px;
+	margin-left: 50px;
+}
+
+.change-profile-image button {
+	background: #ebb3ce;
+	margin: 10px;
+	padding: 5px;
+}
+.created {
+	float: right;
+}
+.feed-body {
+	display: inline-block;
+	width: calc(100% - 200px);
+}
+#image-container {
+    width: 68%;
+    float: left;
+    background: #6f6f6f;
+    padding: 10px;
+}
+
+#image {
+	text-align: center;
+}
+#comments {
+	margin-bottom: 20px;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+#image img {
+	max-width: 800px;
+}
+#image-comments-container {
+	width: 26%;
+    float: right;
+    background: #ebb3ce;
+    padding: 20px;
+}
+.comment-author-image {
+    width: 20px;
+    float: left;
+    margin-right: 10px;
+}
+.comment-datetime {
+    font-size: 11px;
+    margin: 0 0 30px;
+}
+.comment-author-name {
+	font-size: 12px;
+}
+
+.add-comment button {
+	background-color: #6f6f6f;
+	color: #fce5f9;
+	margin-top: 5px;
+	padding: 5px 10px;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 400px){
+	.header {
+		height: auto;
+		flex-direction: column;
+	}
+	.brand {
+		font-size: 1.2em;
+		width: auto;
+		margin: 0;
+	}
+	#login-form {
+		width: 400px;
+		margin-right: 0;
+		flex-direction: column;
+	}
+	#signup-form {
+		width: 90%;
+	}
+}
+@media only screen and (min-width: 401px) and (max-width: 600px){
+	.header {
+		height: auto;
+		flex-direction: column;
+	}
+	.brand {
+		font-size: 1.5em;
+		margin: 0;
+		width: auto;
+	}
+	#login-form {
+		margin: 0 auto;
+		margin-bottom: 5px;
+		flex-direction: column;
+	}
+	#signup-form {
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px){
+	.header {
+		flex-direction: column;
+	}
+	.brand {
+		font-size: 1.8em;
+		margin: 0;
+		width: auto;
+	}
+	#login-form {
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+	#signup-form {
+		width: 50%;
+	}
+}
